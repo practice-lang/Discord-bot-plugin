@@ -1,5 +1,10 @@
 language: java
 script: "java -version"
+env: DB=mysql
+services: 
+   - mysql
+jdk:
+  - openjdk11
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
@@ -8,8 +13,3 @@ after_failure:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh failure $WEBHOOK_URL
-branches:
-  only:
-    - master
-jdk:
-  - openjdk11
