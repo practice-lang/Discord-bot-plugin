@@ -52,22 +52,6 @@ public class c05 extends ListenerAdapter implements Listener {
                 jda.getPresence().setGame(Game.streaming("서시루 방송 보는 중", "https://www.twitch.tv/sirusiru1818"));
     }
     @EventHandler
-    public void chatEvent (AsyncPlayerChatEvent event){
-        String message = event.getMessage();
-        //TextChannel textChannel = jda.getTextChannelsByName("1반", true).get(0);
-        TextChannel textChannel = jda.getTextChannelById("555752946898567175");
-        textChannel.sendMessage("**" + event.getPlayer().getName() + ":** " + message).queue();
-    }
-    /*
-    @Override
-       public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
-        if(e.getAuthor().isBot() || e.getAuthor().isFake() || e.isWebhookMessage()) return;
-        String message = e.getMessage().getContentRaw();
-        User user = e.getAuthor();
-        Bukkit.broadcastMessage( user.getName() + "#" + user.getDiscriminator() + ": " + message);
-    }
-    */
-    @EventHandler
     private void addcommands() {
         jda.addEventListener(new hello());
         jda.addEventListener(new consolelogger());
