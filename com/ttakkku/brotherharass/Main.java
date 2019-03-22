@@ -16,7 +16,7 @@ public class Main extends JavaPlugin  implements Listener {
     public  filecreate f = new filecreate();
     @Override
     public void onEnable() {
-        console.sendMessage(ChatColor.AQUA +"[BrotherHarass] Plugin enabled");
+        console.sendMessage(ChatColor.AQUA +"[Discord bot] Plugin enabled");
         getCommand("hello").setExecutor(new hello());
         new c05(this);
         f.CreateNewfile();
@@ -26,7 +26,7 @@ public class Main extends JavaPlugin  implements Listener {
     @Override
     public void onDisable()
     {
-        console.sendMessage(ChatColor.RED + "[BrotherHarass] Plugin disabled");
+        console.sendMessage(ChatColor.RED + "[Disocrd bot] Plugin disabled");
     }
    @Contract(pure = true)
    public static Main getInstance() {
