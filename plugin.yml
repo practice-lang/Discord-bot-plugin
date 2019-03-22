@@ -8,6 +8,6 @@ commands:
   hello:
     aliases:
       - ㅎㅇ
-      -
+      - hi
     description: 이건 명령어 테스트입니다
     usage: /hello
