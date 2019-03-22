@@ -7,8 +7,6 @@ Minecraft plugin Discolrd bot
   
 materials 
 ---------
- **JDA**
-
-**Discord bot** 
- 
-**Spigot 1.12.2**
+ **JDA**<br>
+**Discord bot**<br> 
+**Spigot 1.12.2**<br>
