@@ -7,7 +7,6 @@ Minecraft plugin Discolrd bot
 *****
 materials 
 ---------
-
 > JDA 
 
 > Discord bot 
