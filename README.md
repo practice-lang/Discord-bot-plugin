@@ -1,8 +1,8 @@
 
 Minecraft plugin Discolrd bot
 ===============================
-* 1.토큰[v]
  * 2.게임 중 메세지[x]
+* 1.토큰[v]
   * 3.배포[x]
   
 materials 
