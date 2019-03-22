@@ -1,13 +1,13 @@
 main: com.ttakkku.brotherharass.Main
 version: 1.0
 author: ttakkku
-load: STARTUP
-api-version: 1.0
+api-version: 3.6.5
 database: false
 name: Discordbot
 commands:
   hello:
     aliases:
       - ㅎㅇ
+      - hi
     description: 이건 명령어 테스트입니다
     usage: /hello
