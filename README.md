@@ -1,9 +1,9 @@
 
- Minecraft plugin Discolrd bot
+Minecraft plugin Discolrd bot
 ===============================
-1.토큰
-2.실행
-3.배포
+* 1.토큰
+ * 2.실행
+  * 3.배포
 *****
 materials 
 ---------
