@@ -12,7 +12,10 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+
 import javax.security.auth.login.LoginException;
+import java.io.*;
+
 
 public class c05 extends ListenerAdapter implements Listener {
     public  Main plugin;
@@ -26,20 +29,27 @@ public class c05 extends ListenerAdapter implements Listener {
 
     private void startBot() {
         try {
-            JDABuilder shardBuilder = new JDABuilder("NTM2NzI3NDY5MjAyNDcyOTYx.D2vIlA.B1Y_L8sIKHTG_B6wC5Tk-gwVUtM");
-            for (int i = 0; i < 5; i++)
-            {
-                shardBuilder.useSharding(i, 5)
-                        .build();
-                System.out.println("[BrotherHarass]  [" + i + "/4] Shard on");
-            }
-            jda = new JDABuilder(AccountType.BOT).setToken("NTM2NzI3NDY5MjAyNDcyOTYx.D2vIlA.B1Y_L8sIKHTG_B6wC5Tk-gwVUtM").buildBlocking();
-            jda.getPresence().setStatus(OnlineStatus.IDLE);
-            jda.getPresence().setGame(Game.streaming("서시루 방송 보는 중", "https://www.twitch.tv/sirusiru1818"));
-            addcommands();
-        } catch (LoginException | InterruptedException e) {
+                File filename = new File("plugins/Bot/token.txt");
+                FileReader filereader = null;
+                filereader = new FileReader(filename);
+                BufferedReader bufReader = new BufferedReader(filereader);
+                String line = "";
+                while (true) {
+                    if (!((line = bufReader.readLine()) != null)) break;
+                    jda = new JDABuilder(AccountType.BOT).setToken(line).buildBlocking();
+                }
+                //  addcommands();
+        } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+        } catch (LoginException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        jda.getPresence().setStatus(OnlineStatus.IDLE);
+                jda.getPresence().setGame(Game.streaming("서시루 방송 보는 중", "https://www.twitch.tv/sirusiru1818"));
     }
     @EventHandler
     public void chatEvent (AsyncPlayerChatEvent event){
