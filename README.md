@@ -1,8 +1,10 @@
 
-# Minecraft plugin Discolrd bot
+## Minecraft plugin Discolrd bot
+
+# materials 
 
 > JDA 
 
-> Spigot 1.12.2
+> Discord bot 
 
->Discord bot 
+> Spigot 1.12.2
