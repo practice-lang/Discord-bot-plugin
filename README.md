@@ -5,6 +5,7 @@ __prefix: ,__
 * 1.토큰[v]
  * 2.게임 중 메세지[x]
   * 3.배포[x]
+   * 4.prefix[x]
   
 Dependencies
 ===========
