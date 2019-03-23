@@ -7,7 +7,9 @@ Minecraft plugin Discolrd bot
 
 Information
 ============= 
-아직은 작성 중입니다.
+```
+아직 준비 중이라고 하셨습니다.
+```
 
 Dependencies
 ===========
