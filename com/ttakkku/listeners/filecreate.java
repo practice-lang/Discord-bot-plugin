@@ -12,7 +12,7 @@ public class filecreate  {
                 foler_Location.mkdir();
                 filename.createNewFile();
                 BufferedWriter w = new BufferedWriter(new FileWriter(filename));
-                w.append("token: ");
+                w.append("");
                 w.flush();
                 w.close();
             }
