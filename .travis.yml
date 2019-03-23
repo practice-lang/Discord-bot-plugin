@@ -1,5 +1,5 @@
 language: java
-script: "sudo java -jar Discordbot.jar"
+script: "java --version"
 env: DB=mysql
 services: 
    - mysql
