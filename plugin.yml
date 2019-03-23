@@ -1,7 +1,6 @@
 main: com.ttakkku.brotherharass.Main
 version: 1.0
 author: ttakkku
-api-version: 3.6.5
 database: false
 name: Discordbot
 commands:
