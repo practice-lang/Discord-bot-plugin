@@ -5,6 +5,13 @@ Minecraft plugin Discolrd bot
  * 2.게임 중 메세지[x]
   * 3.배포[x]
 
+<<<<<<< HEAD
+=======
+```
+Minecraft Plugin Programming Practice
+```
+
+>>>>>>> master
 Dependencies
 ===========
   [**JDA**<br>](https://github.com/DV8FromTheWorld/JDA)
