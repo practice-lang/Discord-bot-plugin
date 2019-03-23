@@ -5,8 +5,6 @@ Minecraft plugin Discolrd bot
  * 2.게임 중 메세지[x]
   * 3.배포[x]
 
-Information
-============= 
 ```
 Minecraft Plugin Programming Practice
 ```
